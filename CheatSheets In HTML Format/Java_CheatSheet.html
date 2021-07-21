@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div _ngcontent-serverapp-c53="" class="content"><router-outlet _ngcontent-serverapp-c53=""></router-outlet><app-blog-page><div class="wrapper container main-container my-4"><div id="content"><app-adsense adtype="adia" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><!----><!----><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9655830461045889" data-ad-slot="6621930351" class="adsbygoogle" style="display: block; text-align: center;"></ins></div><!----><!----></div></app-adsense><h1>Java Cheatsheet <a target="_blank" href="/dashboard/blogs/java-cheatsheet"><!----></a></h1><div class="contentBox"><div><h2>Basics</h2>
+            <p>Basic syntax and functions from the Java programming language.</p>
+            <h3>Boilerplate</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">class</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">{</span> 
+            <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Showing Output</h3>
+            <p>It will print something to the output console.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">[</span>text<span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Taking Input</h3>
+            <p>It will take string input from the user</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span> <span class="token comment">//import scanner class</span>
+            
+            <span class="token comment">// create an object of Scanner class</span>
+            <span class="token class-name">Scanner</span> input <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+            <span class="token comment">// take input from the user</span>
+            <span class="token class-name">String</span> varName <span class="token operator">=</span> input<span class="token punctuation">.</span><span class="token function">nextLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Primitive Type Variables</h2>
+            <p>The eight primitives defined in Java are int, byte, short, long, float, double, boolean, and char those aren't considered objects and represent raw values.</p>
+            <h3>byte</h3>
+            <p>byte is a primitive data type it only takes up 8 bits of memory.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>long</h3>
+            <p>long is another primitive data type related to integers. long takes up 64 bits of memory.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">viewsCount <span class="token operator">=</span> <span class="token number">3_123_456L</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>float</h3>
+            <p>We represent basic fractional numbers in Java using the float type. This is a single-precision decimal number. Which means if we get past six decimal points, this number becomes less precise and more of an estimate.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">price <span class="token operator">=</span> <span class="token number">100</span>INR<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>char</h3>
+            <p>Char is a 16-bit integer representing a Unicode-encoded character.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">letter <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>boolean</h3>
+            <p>The simplest primitive data type is boolean. It can contain only two values: true or false. It stores its value in a single bit.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">isEligible <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>int</h3>
+            <p>int holds a wide range of non-fractional number values.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">var1 <span class="token operator">=</span> <span class="token number">256</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>short</h3>
+            <p>If we want to save memory and byte is too small, we can use short.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">short</span> var2 <span class="token operator">=</span> <span class="token number">786</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Comments</h2>
+            <p>A comment is the code that is not executed by the compiler, and the programmer uses it to keep track of the code.</p>
+            <h3>Single line comment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token comment">// It's a single line comment</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multi-line comment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token comment">/* It's a 
+            multi-line
+            comment
+            */</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Constants</h2>
+            <p>Constants are like a variable, except that their value never changes during program execution.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">final</span> <span class="token keyword">float</span> INTEREST_RATE <span class="token operator">=</span> <span class="token number">0.04</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><div><div><p></p>
+            <h2>Arithmetic Expressions</h2>
+            <p>These are the collection of literals and arithmetic operators.</p>
+            <h3>Addition</h3>
+            <p>It can be used to add two numbers</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Subtraction</h3>
+            <p>It can be used to subtract two numbers</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multiplication</h3>
+            <p>It can be used to multiply add two numbers</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Division</h3>
+            <p>It can be used to divide two numbers</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">;</span>
+            <span class="token keyword">float</span> x <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token number">10</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token number">3</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Modulo Remainder</h3>
+            <p>It returns the remainder of the two numbers after division</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Augmented Operators</h2>
+            <h3>Addition assignment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">var</span> <span class="token operator">+=</span> <span class="token number">10</span> <span class="token comment">// var = var + 10</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Subtraction assignment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">var</span> <span class="token operator">-=</span> <span class="token number">10</span> <span class="token comment">// var = var - 10</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multiplication assignment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">var</span> <span class="token operator">*=</span> <span class="token number">10</span> <span class="token comment">// var = var * 10</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Division assignment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">var</span> <span class="token operator">/=</span> <span class="token number">10</span> <span class="token comment">// var = var / 10</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Modulus assignment</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">var</span> <span class="token operator">%=</span> <span class="token number">10</span> <span class="token comment">// var = var % 10</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Escape Sequences</h2>
+            <p>It is a sequence of characters starting with a backslash, and it doesn't represent itself when used inside string literal.</p>
+            <h3>Tab</h3>
+            <p>It gives a tab space</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\t</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Backslash</h3>
+            <p>It adds a backslash</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\\</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Single quote</h3>
+            <p>It adds a single quotation mark</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\'</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Question mark</h3>
+            <p>It adds a question mark</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\<span class="token operator">?</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Carriage return</h3>
+            <p>Inserts a carriage return in the text at this point.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\r</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Double quote</h3>
+            <p>It adds a double quotation mark</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">\"</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Type Casting</h2>
+            <p>Type Casting is a process of converting one data type into another</p>
+            <h3>Widening Type Casting</h3>
+            <p>It means converting a lower data type into a higher</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token comment">// int x = 45;</span>
+            <span class="token keyword">double</span> var_name <span class="token operator">=</span> x<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Narrowing Type Casting</h3>
+            <p>It means converting a higher data type into a lower</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">double</span> x <span class="token operator">=</span> <span class="token number">165.48</span>
+            <span class="token keyword">int</span> var_name <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>x<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>Decision Control Statements</h2>
+            <p>Conditional statements are used to perform operations based on some condition.</p>
+            <h3>if Statement</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// block of code to be executed if the condition is true</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>if-else Statement</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// If condition is True then this block will get executed</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// If condition is False then this block will get executed</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>if else-if Statement</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Codes</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>condition2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Codes</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Codes</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Codes</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Ternary Operator</h3>
+            <p>It is shorthand of an if-else statement.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">variable <span class="token operator">=</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token operator">?</span> expressionTrue <span class="token operator">:</span> expressionFalse<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Switch Statements</h3>
+            <p>It allows a variable to be tested for equality against a list of values (cases).</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">switch</span><span class="token punctuation">(</span>expression<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> a<span class="token operator">:</span>
+            <span class="token comment">// code block</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> b<span class="token operator">:</span>
+            <span class="token comment">// code block</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token comment">// code block</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Iterative Statements</h2>
+            <p>Iterative statements facilitate programmers to execute any block of code lines repeatedly and can be controlled as per conditions added by the coder.</p>
+            <h3>while Loop</h3>
+            <p>It iterates the block of code as long as a specified condition is True</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// code block</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>for Loop</h3>
+            <p>for loop is used to run a block of code several times</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialization<span class="token punctuation">;</span> termination<span class="token punctuation">;</span> increment<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">statement</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>for-each Loop</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">for</span><span class="token punctuation">(</span>dataType item <span class="token operator">:</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>do-while Loop</h3>
+            <p>It is an exit controlled loop. It is very similar to the while loop with one difference, i.e., the body of the do-while loop is executed at least once even if the condition is False</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+            <span class="token comment">// body of loop</span>
+            <span class="token punctuation">}</span> <span class="token keyword">while</span><span class="token punctuation">(</span>textExpression<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Break statement</h3>
+            <p>break keyword inside the loop is used to terminate the loop</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">break</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Continue statement</h3>
+            <p>continue keyword skips the rest of the current iteration of the loop and returns to the starting point of the loop</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">continue</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable</p>
+            <h3>Declaring an array</h3>
+            <p>Declaration of an array</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> var_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Defining an array</h3>
+            <p>Defining an array</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> var_name <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">''</span><span class="token class-name">Ram</span><span class="token string">", "</span><span class="token class-name">Rohan</span><span class="token string">", "</span><span class="token class-name">Aakash</span>"<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Accessing an array</h3>
+            <p>Accessing the elements of an array</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> var_name <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">''</span><span class="token class-name">Ram</span><span class="token string">", "</span><span class="token class-name">Rohan</span><span class="token string">", "</span><span class="token class-name">Aakash</span>"<span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Changing an element</h3>
+            <p>Changing any element in an array</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> var_name <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">''</span><span class="token class-name">Ram</span><span class="token string">", "</span><span class="token class-name">Rohan</span><span class="token string">", "</span><span class="token class-name">Aakash</span>"<span class="token punctuation">}</span><span class="token punctuation">;</span>
+            var_name<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Shubham"</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Array length</h3>
+            <p>It gives the length of the array</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Loop through an array</h3>
+            <p>It allows us to iterate through each array element</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> var_name <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">''</span><span class="token class-name">Ram</span><span class="token string">", "</span><span class="token class-name">Rohan</span><span class="token string">", "</span><span class="token class-name">Aakash</span>"<span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> var_name<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multi-dimensional Arrays</h3>
+            <p>Arrays can be 1-D, 2-D or multi-dimensional.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token comment">// Creating a 2x3 array (two rows, three columns) </span>
+            <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> matrix <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+            matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> 
+            <span class="token comment">// Shortcut </span>
+            <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> matrix <span class="token operator">=</span> <span class="token punctuation">{</span> 
+            <span class="token punctuation">{</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+            <span class="token punctuation">{</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span> <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>Methods</h2>
+            <p>Methods are used to divide an extensive program into smaller pieces. It can be called multiple times to provide reusability to the program.</p>
+            <h3>Declaration</h3>
+            <p>Declaration of a method</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">returnType <span class="token function">methodName</span><span class="token punctuation">(</span>parameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//statements</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Calling a method</h3>
+            <p>Calling a method</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token function">methodName</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Method Overloading</h3>
+            <p>Method overloading means having multiple methods with the same name, but different parameters.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">class</span> <span class="token class-name">Calculate</span>
+            <span class="token punctuation">{</span>
+            <span class="token keyword">void</span> sum <span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Sum is: "</span><span class="token operator">+</span><span class="token punctuation">(</span>a<span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">void</span> sum <span class="token punctuation">(</span><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Sum is: "</span><span class="token operator">+</span><span class="token punctuation">(</span>a<span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token class-name">Public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> main <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token class-name">Calculate</span> calc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            calc<span class="token punctuation">.</span>sum <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//sum(int x, int y) is method is called.</span>
+            calc<span class="token punctuation">.</span>sum <span class="token punctuation">(</span><span class="token number">1.2f</span><span class="token punctuation">,</span> <span class="token number">5.6f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//sum(float x, float y) is called.</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Recursion</h3>
+            <p>Recursion is when a function calls a copy of itself to work on a minor problem. And the function that calls itself is known as the Recursive function.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">void</span> <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Strings</h2>
+            <p>It is a collection of characters surrounded by double quotes.</p>
+            <h3>Creating String Variable</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var_name <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>String Length</h3>
+            <p>Returns the length of the string</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var_name <span class="token operator">=</span> <span class="token string">"Ram"</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length of the string is: "</span> <span class="token operator">+</span> var_name<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>String Methods toUpperCase()</h3>
+            <p>Convert the string into uppercase</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var_name <span class="token operator">=</span> <span class="token string">"Ram"</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>toLowerCase()</h3>
+            <p>Convert the string into lowercase</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var_name <span class="token operator">=</span> <span class="token string">""</span><span class="token class-name">Ram</span><span class="token string">""</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>indexOf()</h3>
+            <p>Returns the index of specified character from the string</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var_name <span class="token operator">=</span> <span class="token string">"Ram"</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var_name<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>concat()</h3>
+            <p>Used to concatenate two strings</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">String</span> var1 <span class="token operator">=</span> <span class="token string">"Ram"</span><span class="token punctuation">;</span>
+            <span class="token class-name">String</span> var2 <span class="token operator">=</span> <span class="token string">"Bhai"</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>var1<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>var2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Math Class</h2>
+            <p>Math class allows you to perform mathematical operations.</p>
+            <h3>Methods max() method</h3>
+            <p>It is used to find the greater number among the two</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>min() method</h3>
+            <p>It is used to find the smaller number among the two</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>sqrt() method</h3>
+            <p>It returns the square root of the supplied value</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">144</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>random() method</h3>
+            <p>It is used to generate random numbers</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//It will produce random number b/w 0.0 and 1.0</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">int</span> random_num <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">101</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//Random num b/w 0 and 100</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>Object-Oriented Programming</h2>
+            <p>It is a programming approach that primarily focuses on using objects and classes. The objects can be any real-world entities.</p>
+            <h3>object</h3>
+            <p>An object is an instance of a Class.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">className object <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">className</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>class</h3>
+            <p>A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">class</span> <span class="token class-name">ClassName</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Fields</span>
+            <span class="token comment">// Methods</span>
+            <span class="token comment">// Constructors</span>
+            <span class="token comment">// Blocks</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Encapsulation</h3>
+            <p>Encapsulation is a mechanism of wrapping the data and code acting on the data together as a single unit. In encapsulation, the variables of a class will be hidden from other classes and can be accessed only through the methods of their current class.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span> <span class="token comment">// using private access modifier </span>
+            
+            <span class="token comment">// Getter </span>
+            <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">return</span> name<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            
+            <span class="token comment">// Setter </span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span><span class="token class-name">String</span> newName<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> newName<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Inheritance</h3>
+            <p>Inheritance can be defined as the process where one class acquires the properties of another. With the use of inheritance the information is made manageable in a hierarchical order.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">class</span> <span class="token class-name">Subclass</span><span class="token operator">-</span>name <span class="token keyword">extends</span> <span class="token class-name">Superclass</span><span class="token operator">-</span>name 
+            <span class="token punctuation">{</span> 
+            <span class="token comment">//methods and fields </span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Polymorphism</h3>
+            <p>Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token comment">// A class with multiple methods with the same name </span>
+            <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Adder</span> <span class="token punctuation">{</span> 
+            <span class="token comment">// method 1 </span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            
+            <span class="token comment">// method 2 </span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b <span class="token operator">+</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            
+            <span class="token comment">// method 3 </span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">String</span> a<span class="token punctuation">,</span> <span class="token class-name">String</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">" + "</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span> 
+            
+            <span class="token comment">// My main class </span>
+            <span class="token keyword">class</span> <span class="token class-name">MyMainClass</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token class-name">Adder</span> adder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Adder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// create a Adder object </span>
+            adder<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// invoke method 1 </span>
+            adder<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// invoke method 2 </span>
+            adder<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"5"</span><span class="token punctuation">,</span> <span class="token string">"4"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// invoke method 3 </span>
+            <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>File Operations</h2>
+            <p>File handling refers to reading or writing data from files. Java provides some functions that allow us to manipulate data in the files.</p>
+            <h3>canRead method</h3>
+            <p>Checks whether the file is readable or not</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">canRead</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>createNewFile method</h3>
+            <p>It creates an empty file</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">createNewFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>canWrite method</h3>
+            <p>Checks whether the file is writable or not</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">canWrite</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>exists method</h3>
+            <p>Checks whether the file exists</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>delete method</h3>
+            <p>It deletes a file</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>getName method</h3>
+            <p>It returns the name of the file</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>getAbsolutePath method</h3>
+            <p>It returns the absolute pathname of the file</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">getAbsolutePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>length Method</h3>
+            <p>It returns the size of the file in bytes</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>list Method</h3>
+            <p>It returns an array of the files in the directory</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>mkdir method</h3>
+            <p>It is used to create a new directory</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">mkdir</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>close method</h3>
+            <p>It is used to close the file</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java">file<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>To write something in the file</h3>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileWriter</span><span class="token punctuation">;</span> <span class="token comment">// Import the FileWriter class</span>
+            <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span> <span class="token comment">// Import the IOException class to handle errors</span>
+            
+            <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">WriteToFile</span> <span class="token punctuation">{</span>
+            <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token class-name">FileWriter</span> myWriter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileWriter</span><span class="token punctuation">(</span><span class="token string">"filename.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            myWriter<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Laal Phool Neela Phool, Ram Bhaiya Beautiful"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            myWriter<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Successfully wrote to the file."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"An error occurred."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Exception Handling</h2>
+            <p>An exception is an unusual condition that results in an interruption in the flow of the program.</p>
+            <h3>try-catch block</h3>
+            <p>try statement allow you to define a block of code to be tested for errors. catch block is used to handle the exception.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Statements</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Statements</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>finally block</h3>
+            <p>finally code is executed whether an exception is handled or not.</p>
+            <div class="code-toolbar"><pre class=" language-java"><code class=" language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">//Statements</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ExceptionType1</span> e1<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token comment">// catch block</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+            <span class="token comment">// finally block always executes</span>
+            <span class="token punctuation">}</span></code></pre></div>
+    </body>
+</html>
