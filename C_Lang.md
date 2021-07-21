@@ -74,9 +74,7 @@ Here's a table containing commonly used types in C programming for quick access.
 			<td>at least 10, usually 12 or 16</td>
 			<td><code>%Lf</code></td>
 		</tr></tbody></table>
-
-<br>
-
+	
 ### scanf function
 
 It is used to take input from the user
