@@ -1,4 +1,4 @@
-<img src="" align="right" width="200" align="right" />
+<img src="https://github.com/abhayanigam/abhayanigam/blob/main/Assets/Java.png" align="right" width="200" align="right" />
 
 # Java Cheatsheet
 ## Basics
