@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="content"><app-adsense adtype="adia" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><!----><!----><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9655830461045889" data-ad-slot="6621930351" class="adsbygoogle" style="display: block; text-align: center;"></ins></div><!----><!----></div></app-adsense><h1>C Language CheatSheet <a target="_blank" href="/dashboard/blogs/c-cheatsheet"><!----></a></h1><h2>Basics</h2>
+            <p>Basic syntax and functions from the C programming language.</p>
+            <h3>Boilerplate Code</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h&gt;</span></span>
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>printf function</h3>
+            <p>It is used to show output on the screen</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>scanf function</h3>
+            <p>It is used to take input from the user</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"placeholder"</span><span class="token punctuation">,</span> variables<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Comments</h2>
+            <p>A comment is the code that is not executed by the compiler, and the programmer uses it to keep track of the code.</p>
+            <h3>Single line comment</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token comment">// It's a single line comment</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multi-line comment</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token comment">/* It's a 
+            multi-line
+            comment
+            */</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Data types</h2>
+            <p>The data type is the type of data</p>
+            <h3>Character type</h3>
+            <p>Typically a single octet(one byte). It is an integer type</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">char</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Integer type</h3>
+            <p>The most natural size of integer for the machine</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">int</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Float type</h3>
+            <p>A single-precision floating-point value</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">float</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Double type</h3>
+            <p>A double-precision floating-point value</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">double</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Void type</h3>
+            <p>Represents the absence of the type</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">void</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><div><div><p></p>
+            <h2>Escape Sequences</h2>
+            <p>It is a sequence of characters starting with a backslash, and it doesn't represent itself when used inside string literal.</p>
+            <h3>Alarm or Beep</h3>
+            <p>It produces a beep sound</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\a</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Backspace</h3>
+            <p>It adds a backspace</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\b</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Form feed</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\f</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Newline</h3>
+            <p>Newline Character</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\n</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Carriage return</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\r</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Tab</h3>
+            <p>It gives a tab space</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\t</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Backslash</h3>
+            <p>It adds a backslash</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\\</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Single quote</h3>
+            <p>It adds a single quotation mark</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\'</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Question mark</h3>
+            <p>It adds a question mark</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\<span class="token operator">?</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Octal No.</h3>
+            <p>It represents the value of an octal number</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\nnn</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Hexadecimal No.</h3>
+            <p>It represents the value of a hexadecimal number</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\xhh</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Null</h3>
+            <p>The null character is usually used to terminate a string</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">\<span class="token number">0</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Conditional Instructions</h2>
+            <p>Conditional statements are used to perform operations based on some condition.</p>
+            <h3>If Statement</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>If-else Statement</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">/* Code */</span>
+            <span class="token punctuation">}</span>
+            </code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>if else-if Statement</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Statements;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">// Statements;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">// Statements</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Switch Case Statement</h3>
+            <p>It allows a variable to be tested for equality against a list of values (cases).</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">switch</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> 
+            <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> constant<span class="token operator">-</span>expression<span class="token operator">:</span> 
+            statement1<span class="token punctuation">;</span>
+            statement2<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> constant<span class="token operator">-</span>expression<span class="token operator">:</span> 
+            statement<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token keyword">default</span><span class="token operator">:</span> 
+            statement<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>Iterative Statements</h2>
+            <p>Iterative statements facilitate programmers to execute any block of code lines repeatedly and can be controlled as per conditions added by the programmer.</p>
+            <h3>while Loop</h3>
+            <p>It allows execution of statement inside the block of the loop until the condition of loop succeeds.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>do-while loop</h3>
+            <p>It is an exit controlled loop. It is very similar to the while loop with one difference, i.e., the body of the do-while loop is executed at least once even if the expression is false</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">do</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>for loop</h3>
+            <p>It is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like the array and linked list.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Break Statement</h3>
+            <p>break keyword inside the loop is used to terminate the loop</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">break</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Continue Statement</h3>
+            <p>continue keyword skips the rest of the current iteration of the loop and returns to the starting point of the loop</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">continue</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Functions &amp; Recursion</h2>
+            <p>Functions are used to divide an extensive program into smaller pieces. It can be called multiple times to provide reusability and modularity to the C program.</p>
+            <h3>Function Definition</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">return_type <span class="token function">function_name</span><span class="token punctuation">(</span>data_type parameter<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token comment">//code to be executed </span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Recursion</h3>
+            <p>Recursion is when a function calls a copy of itself to work on a minor problem. And the function that calls itself is known as the Recursive function.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">void</span> <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Pointers</h2>
+            <p>Pointer is a variable that contains the address of another variable,</p>
+            <h3>Declaration</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">datatype <span class="token operator">*</span>var_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Arrays</h2>
+            <p>An array is a collection of data items of the same type.</p>
+            <h3>Declaration</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">data_type array_name<span class="token punctuation">[</span>array_size<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Accessing element</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">int</span> variable_name <span class="token operator">=</span> array<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>Strings</h2>
+            <p>A string is a 1-D character array terminated by a null character ('\0')</p>
+            <h3>Declaration</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">char</span> str_name<span class="token punctuation">[</span>size<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>gets() function</h3>
+            <p>It allows you to enter multi-word string</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">gets</span><span class="token punctuation">(</span><span class="token string">"string"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>puts() function</h3>
+            <p>It is used to show string output</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"string"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>String Functions strlen()</h3>
+            <p>It is used to calculate the length of the string</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">strlen</span><span class="token punctuation">(</span>string_name<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>strcpy() function</h3>
+            <p>It is used to copy the content of second-string into the first string passed to it</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">strcpy</span><span class="token punctuation">(</span>destination<span class="token punctuation">,</span> source<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>strcat() function</h3>
+            <p>It is used to concatenate two strings</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">strcat</span><span class="token punctuation">(</span>first_string<span class="token punctuation">,</span> second_string<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>strcmp() function</h3>
+            <p>It is used to compare two strings</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">strcmp</span><span class="token punctuation">(</span>first_string<span class="token punctuation">,</span> second_string<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Structures</h2>
+            <p>The structure is a collection of variables of different types under a single name. Defining structure means creating a new data type.</p>
+            <h3>Structure syntax</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">struct</span> <span class="token class-name">structureName</span> 
+            <span class="token punctuation">{</span>
+            dataType member1<span class="token punctuation">;</span>
+            dataType member2<span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>typedef keyword</h3>
+            <p>typedef function allows users to provide alternative names for the primitive and user-defined data types.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span> <span class="token class-name">structureName</span> 
+            <span class="token punctuation">{</span>
+            dataType member1<span class="token punctuation">;</span>
+            dataType member2<span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span>new_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <p></p></div><app-adsense adtype="ad" _nghost-serverapp-c29=""><div _ngcontent-serverapp-c29="" class="text-center"><div _ngcontent-serverapp-c29="" class="text-center"><ins _ngcontent-serverapp-c29="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div><p></p>
+            <h2>File Handling</h2>
+            <p>A set of methods for handling File IO (read/write/append) in C language</p>
+            <h3>FILE pointer</h3>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">FILE <span class="token operator">*</span>filePointer<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>&nbsp;</h2>
+            <h3>Opening a file</h3>
+            <p>It is used to open file in C.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">filePointer <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span>fileName<span class="token punctuation">.</span>txt<span class="token punctuation">,</span> w<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>fscanf() function</h3>
+            <p>It is used to read the content of file.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">fscanf</span><span class="token punctuation">(</span>FILE <span class="token operator">*</span>stream<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>format<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>fprintf() function</h3>
+            <p>It is used to write content into the file.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">fprintf</span><span class="token punctuation">(</span>FILE <span class="token operator">*</span>fptr<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>str<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>fgetc() function</h3>
+            <p>It reads a character from a file opened in read mode. It returns EOF on reaching the end of file.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">fgetc</span><span class="token punctuation">(</span>FILE <span class="token operator">*</span>pointer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>fputc() function</h3>
+            <p>It writes a character to a file opened in write mode</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">fputc</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">,</span> FILE <span class="token operator">*</span>pointer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Closing a file</h3>
+            <p>It closes the file.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">fclose</span><span class="token punctuation">(</span>filePointer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Dynamic Memory Allocation</h2>
+            <p>A set of functions for dynamic memory allocation from the heap. These methods are used to use the dynamic memory which makes our C programs more efficient</p>
+            <h3>malloc() function</h3>
+            <p>Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">ptr <span class="token operator">=</span> <span class="token punctuation">(</span>castType<span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>calloc() function</h3>
+            <p>Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">ptr <span class="token operator">=</span> <span class="token punctuation">(</span>castType<span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">calloc</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> size<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>free function</h3>
+            <p>It is used to free the allocated memory.</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c"><span class="token function">free</span><span class="token punctuation">(</span>ptr<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>realloc() function</h3>
+            <p>If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes</p>
+            <div class="code-toolbar"><pre class=" language-c"><code class=" language-c">ptr <span class="token operator">=</span> <span class="token function">realloc</span><span class="token punctuation">(</span>ptr<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+        </body>
+</html>
