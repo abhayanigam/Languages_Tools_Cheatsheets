@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            <h1>C++ Cheatsheet</h1>
+            <h2>Basics</h2>
+            <p>Basic syntax and functions from the C++ programming language.</p>
+            <h3>Boilerplate</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Welcome To Github"</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>cout &lt;&lt;</h3>
+            <p>It prints output on the screen</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">cout <span class="token operator">&lt;&lt;</span> <span class="token string">"This is C++ Programming"</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>cin &gt;&gt;</h3>
+            <p>It takes input from the user</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">cin <span class="token operator">&gt;&gt;</span> variable_name</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Data types</h2>
+            <p>The data type is the type of data</p>
+            <h3>Character type</h3>
+            <p>Typically a single octet(one byte). It is an integer type</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">char</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Integer type</h3>
+            <p>The most natural size of integer for the machine</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">int</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Float type</h3>
+            <p>A single-precision floating-point value</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">float</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Double type</h3>
+            <p>A double-precision floating-point value</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">double</span> variable_name<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Void type</h3>
+            <p>Represents the absence of the type</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">void</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Boolean type</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">bool</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Escape Sequences</h2>
+            <p>It is a sequence of characters starting with a backslash, and it doesn't represent itself when used inside string literal.</p>
+            <h3>Alarm or Beep</h3>
+            <p>It produces a beep sound</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\a</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Backspace</h3>
+            <p>It adds a backspace</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\b</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Form feed</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\f</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Newline</h3>
+            <p>Newline Character</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\n</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Carriage return</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\r</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Tab</h3>
+            <p>It gives a tab space</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\t</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Backslash</h3>
+            <p>It adds a backslash</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\\</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Single quote</h3>
+            <p>It adds a single quotation mark</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\'</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Question mark</h3>
+            <p>It adds a question mark</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\<span class="token operator">?</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Octal No.</h3>
+            <p>It represents the value of an octal number</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\nnn</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Hexadecimal No.</h3>
+            <p>It represents the value of a hexadecimal number</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\xhh</code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Null</h3>
+            <p>The null character is usually used to terminate a string</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">\<span class="token number">0</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Comments</h2>
+            <p>A comment is a code that is not executed by the compiler, and the programmer uses it to keep track of the code.</p>
+            <h3>Single line comment</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token comment">// It's a single line comment</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Multi-line comment</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token comment">/* It's a 
+            multi-line
+            comment
+            */</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Strings</h2>
+            <p>It is a collection of characters surrounded by double quotes</p>
+            <h3>Declaring String</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token comment">// Include the string library</span>
+            <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+            
+            <span class="token comment">// String variable</span>
+            string variable1 <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>append function</h3>
+            <p>It is used to concatenate two strings</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">string firstName <span class="token operator">=</span> <span class="token string">"Ramu"</span><span class="token punctuation">;</span>
+            string lastName <span class="token operator">=</span> <span class="token string">"Bhai"</span><span class="token punctuation">;</span>
+            string fullName <span class="token operator">=</span> firstName<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>lastName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> fullName<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>length function</h3>
+            <p>It returns the length of the string</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">string variable1 <span class="token operator">=</span> <span class="token string">"Github"</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"The length of the string is: "</span> <span class="token operator">&lt;&lt;</span> variable1<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            </code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Accessing and changing string characters</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">string variable1 <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span>
+            variable1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'i'</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> variable1<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Maths</h2>
+            <p>C++ provides some built-in math functions that help the programmer to perform mathematical operations efficiently.</p>
+            <h3>max function</h3>
+            <p>It returns the larger value among the two</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">cout <span class="token operator">&lt;&lt;</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">140</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>min function</h3>
+            <p>It returns the smaller value among the two</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">cout <span class="token operator">&lt;&lt;</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token number">55</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>sqrt function</h3>
+            <p>It returns the square root of a supplied number</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cmath&gt;</span></span>
+            
+            cout <span class="token operator">&lt;&lt;</span> <span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">144</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>ceil function</h3>
+            <p>It returns the value of x rounded up to its nearest integer</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token function">ceil</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>floor function</h3>
+            <p>It returns the value of x rounded down to its nearest integer</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token function">floor</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>pow function</h3>
+            <p>It returns the value of x to the power of y</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token function">pow</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Decision Making Instructions</h2>
+            <p>Conditional statements are used to perform operations based on some condition.</p>
+            <h3>If Statement</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// This block of code will get executed, if the condition is True</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>If-else Statement</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// If condition is True then this block will get executed</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// If condition is False then this block will get executed</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>if else-if Statement</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Statements;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">// Statements;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">// Statements</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Ternary Operator</h3>
+            <p>It is shorthand of an if-else statement.</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">variable <span class="token operator">=</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token operator">?</span> expressionTrue <span class="token operator">:</span> expressionFalse<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Switch Case Statement</h3>
+            <p>It allows a variable to be tested for equality against a list of values (cases).</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">switch</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> 
+            <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> constant<span class="token operator">-</span>expression<span class="token operator">:</span> 
+            statement1<span class="token punctuation">;</span>
+            statement2<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> constant<span class="token operator">-</span>expression<span class="token operator">:</span> 
+            statement<span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token keyword">default</span><span class="token operator">:</span> 
+            statement<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Iterative Statements</h2>
+            <p>Iterative statements facilitate programmers to execute any block of code lines repeatedly and can be controlled as per conditions added by the programmer.</p>
+            <h3>while Loop</h3>
+            <p>It iterates the block of code as long as a specified condition is True</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code block to be executed */</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>do-while loop</h3>
+            <p>It is an exit controlled loop. It is very similar to the while loop with one difference, i.e., the body of the do-while loop is executed at least once even if the condition is False</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">do</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token comment">/* condition */</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>for loop</h3>
+            <p>It is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like the array and linked list.</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token comment">/* code */</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Break Statement</h3>
+            <p>break keyword inside the loop is used to terminate the loop</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">break</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Continue Statement</h3>
+            <p>continue keyword skips the rest of the current iteration of the loop and returns to the starting point of the loop</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">continue</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>References</h2>
+            <p>Reference is an alias for an already existing variable. Once it is initialized to a variable, it cannot be changed to refer to another variable. So, it's a const pointer.</p>
+            <h3>Creating References</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">string var1 <span class="token operator">=</span> <span class="token string">"Value1"</span><span class="token punctuation">;</span> <span class="token comment">// var1 variable</span>
+            string <span class="token operator">&amp;</span>var2 <span class="token operator">=</span> var1<span class="token punctuation">;</span> <span class="token comment">// reference to var1</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Pointers</h2>
+            <p>Pointer is a variable that holds the memory address of another variable</p>
+            <h3>Declaration</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">datatype <span class="token operator">*</span>var_name<span class="token punctuation">;</span> 
+            
+            var_name <span class="token operator">=</span> <span class="token operator">&amp;</span>variable2<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Functions &amp; Recursion</h2>
+            <p>Functions are used to divide an extensive program into smaller pieces. It can be called multiple times to provide reusability and modularity to the C program.</p>
+            <h3>Function Definition</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">return_type <span class="token function">function_name</span><span class="token punctuation">(</span>data_type parameter<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token comment">//code to be executed </span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Function Call</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token function">function_name</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Recursion</h3>
+            <p>Recursion is when a function calls a copy of itself to work on a minor problem. And the function that calls itself is known as the Recursive function.</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">void</span> <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token function">recurse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Object-Oriented Programming</h2>
+            <p>It is a programming approach that primarily focuses on using objects and classes. The objects can be any real-world entities.</p>
+            <h3>class</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">class</span> <span class="token class-name">Class_name</span> <span class="token punctuation">{</span>
+            <span class="token keyword">public</span><span class="token operator">:</span> <span class="token comment">// Access specifier</span>
+            <span class="token comment">// fields</span>
+            <span class="token comment">// functions</span>
+            <span class="token comment">// blocks</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>object</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">Class_name ObjectName<span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Constructors</h3>
+            <p>It is a special method that is called automatically as soon as the object is created.</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">class</span> <span class="token class-name">className</span> <span class="token punctuation">{</span> <span class="token comment">// The class</span>
+            <span class="token keyword">public</span><span class="token operator">:</span> <span class="token comment">// Access specifier</span>
+            <span class="token function">className</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Constructor</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Github"</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            className obj_name<span class="token punctuation">;</span> 
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Encapsulation</h3>
+            <p>Data encapsulation is a mechanism of bundling the data, and the functions that use them and data abstraction is a mechanism of exposing only the interfaces and hiding the implementation details from the user.</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream&gt;</span> </span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span> 
+            <span class="token keyword">class</span> <span class="token class-name">ExampleEncap</span><span class="token punctuation">{</span> 
+            <span class="token keyword">private</span><span class="token operator">:</span> 
+            <span class="token comment">/* Since we have marked these data members private, 
+            * any entity outside this class cannot access these 
+            * data members directly, they have to use getter and 
+            * setter functions. 
+            */</span> 
+            <span class="token keyword">int</span> num<span class="token punctuation">;</span> 
+            <span class="token keyword">char</span> ch<span class="token punctuation">;</span> 
+            <span class="token keyword">public</span><span class="token operator">:</span> 
+            <span class="token comment">/* Getter functions to get the value of data members. 
+            * Since these functions are public, they can be accessed 
+            * outside the class, thus provide the access to data members 
+            * through them 
+            */</span> 
+            <span class="token keyword">int</span> <span class="token function">getNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">return</span> num<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token keyword">char</span> <span class="token function">getCh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">return</span> ch<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token comment">/* Setter functions, they are called for assigning the values 
+            * to the private data members. 
+            */</span> 
+            <span class="token keyword">void</span> <span class="token function">setNum</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">this</span><span class="token operator">-&gt;</span>num <span class="token operator">=</span> num<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token keyword">void</span> <span class="token function">setCh</span><span class="token punctuation">(</span><span class="token keyword">char</span> ch<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+            <span class="token keyword">this</span><span class="token operator">-&gt;</span>ch <span class="token operator">=</span> ch<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">;</span> 
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            ExampleEncap obj<span class="token punctuation">;</span> 
+            obj<span class="token punctuation">.</span><span class="token function">setNum</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            obj<span class="token punctuation">.</span><span class="token function">setCh</span><span class="token punctuation">(</span><span class="token string">'A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            cout<span class="token operator">&lt;&lt;</span>obj<span class="token punctuation">.</span><span class="token function">getNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span> 
+            cout<span class="token operator">&lt;&lt;</span>obj<span class="token punctuation">.</span><span class="token function">getCh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span> 
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>File Handling</h2>
+            <p>File handling refers to reading or writing data from files. C provides some functions that allow us to manipulate data in the files.</p>
+            <h3>Creating and writing to a text file</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+            <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+            
+            <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Create and open a text file</span>
+            ofstream <span class="token function">MyFile</span><span class="token punctuation">(</span><span class="token string">"filename.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            
+            <span class="token comment">// Write to the file</span>
+            MyFile <span class="token operator">&lt;&lt;</span> <span class="token string">"File Handling in C++"</span><span class="token punctuation">;</span>
+            
+            <span class="token comment">// Close the file</span>
+            MyFile<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Reading the file</h3>
+            <p>It allows us to read the file line by line</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token function">getline</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Opening a File</h3>
+            <p>It opens a file in the C++ program</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">void</span> <span class="token function">open</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> file_name<span class="token punctuation">,</span>ios<span class="token operator">::</span>openmode mode<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>OPEN MODES</h3>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>in</h3>
+            <p>Opens the file to read(default for ifstream)</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>in<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>out</h3>
+            <p>Opens the file to write(default for ofstream)</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>out<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>binary</h3>
+            <p>Opens the file in binary mode</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>binary<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>app</h3>
+            <p>Opens the file and appends all the outputs at the end</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>app<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>ate</h3>
+            <p>Opens the file and moves the control to the end of the file</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>ate<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>trunc</h3>
+            <p>Removes the data in the existing file</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>trunc<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>nocreate</h3>
+            <p>Opens the file only if it already exists</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>nocreate<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>noreplace</h3>
+            <p>Opens the file only if it does not already exist</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">fs<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">"test.txt"</span><span class="token punctuation">,</span> std<span class="token operator">::</span>fstream<span class="token operator">::</span>noreplace<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h3>Closing a file</h3>
+            <p>It closes the file</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp">myfile<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div>
+            <h2>Exception Handling</h2>
+            <p>An exception is an unusual condition that results in an interruption in the flow of the program.</p>
+            <h3>try and catch block</h3>
+            <p>A basic try-catch block in python. When the try block throws an error, the control goes to the except block</p>
+            <div class="code-toolbar"><pre class=" language-cpp"><code class=" language-cpp"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">// code to try</span>
+            <span class="token keyword">throw</span> exception<span class="token punctuation">;</span> <span class="token comment">// If a problem arises, then throw an exception</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Block of code to handle errors</span>
+            <span class="token punctuation">}</span></code></pre><div class="toolbar"><div class="toolbar-item"><button type="button">Copy</button></div></div></div></div>
+    </body>
+</html>
