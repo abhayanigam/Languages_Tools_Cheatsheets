@@ -1,6 +1,7 @@
 <img src="https://github.com/abhayanigam/Learn_C/blob/main/c.png" align="right" width="200" align="right" />
 
 # C Language CheatSheet
+#### For In depth Knowledge [Click here.](https://github.com/abhayanigam/Learn_C)
 
 ## Basics
 

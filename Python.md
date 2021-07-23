@@ -1,6 +1,7 @@
-<img src="https://github.com/abhayanigam/Learn_Python/blob/main/Assets/python.png" align="right" width="200" align="right" />
+<img src="https://github.com/abhayanigam/Learn_Python/blob/main/Assets/python.png" align="right" width="200" align="right" >
 
 # Python CheatSheet
+#### For In depth Knowledge [Click here.](https://github.com/abhayanigam/Learn_Python)
 
 ## Basics
 
