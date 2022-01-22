@@ -71,13 +71,3 @@ or
 		dd - Deletes the current line of text.
 	>To rename the file:
 		$ :f filename - Helps you to rename the file.
-
-
-
-
-
-
-
-
-
-
