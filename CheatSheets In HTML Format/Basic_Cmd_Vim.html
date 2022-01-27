@@ -1,0 +1,92 @@
+<h1>Basic Commands of Vim</h1>
+<p>**For brief detail :** <a href="https://www.freecodecamp.org/news/learn-linux-vim-basic-features-19134461ab85/">Link 1</a> -/- <a href="https://www.redhat.com/sysadmin/vim-commands">Link 2</a></p>
+<ol>
+<li>
+<p>To create a new file in vim :<br>
+<code>$ vim filename</code></p>
+</li>
+<li>
+<p>To open a existing file in vim :<br>
+<code>$ vim That_filename</code></p>
+</li>
+<li>
+<p>To insert a text in vim :<br>
+<code>$ simply press i (insert)</code> <em>Now the file goes to edit mode.</em></p>
+</li>
+<li>
+<p>To exit from the editor :<br>
+(Press Esc to return to command mode.)<br>
+<code>$ :wq</code> and Enter key</p>
+</li>
+<li>
+<p>To create like : (If you are not sure of file name and want to start typing):<br>
+<code>$ vi</code></p>
+</li>
+<li>
+<p>To exit from the editor from vi file:<br>
+(Press Esc to return to command mode.)<br>
+<code>$ :w</code> (filename)<br>
+(Then enter Esc)<br>
+<code>$ :q</code> (will quit the editor)<br>
+<strong>OR</strong><br>
+<code>$ :wq filename.c</code> (will write the contents to the file <code>filename.c</code> and quit the editor)</p>
+</li>
+<li>
+<p>If you are not interested in the text you wrote and wish to exit without saving anything: <br>
+<code>$ :q!</code> (and you are out! The <code>!</code> is required at the end to say : ==“Yes, I am sure I don’t want to save the contents and I want to get out urgently”==)</p>
+</li>
+<li>
+<p>To open multiple files in tabs:<br>
+<code>$ vim -p source.c source.h</code></p>
+</li>
+<li>
+<p>To navigate between these tabs, you can be in normal mode and type :<br>
+<code>$ gt</code> or <code>gT</code> to go to next tab or previous tab respectively.</p>
+</li>
+<li>
+<p>To close a single tab:<br>
+<code>$ :tabclose</code></p>
+</li>
+<li>
+<p>Make the vi/vim text editor show or hide line numbers :</p>
+<ul>
+<li>Press ESC key</li>
+<li>At the : prompt type the following command to run on line numbers:<br>
+<code>$ :set number</code> or <code>set nu</code></li>
+<li>To turn off line numbering, type the following command at the prompt :<br>
+<code>$ :set nonumber</code> or <code>set nonu</code></li>
+</ul>
+</li>
+<li>
+<p>To fold a function (code fold):<br>
+<code>$ :5,16fo</code></p>
+</li>
+<li>
+<p>To Open the code fold:<br>
+<code>$ zo (normal mode)</code></p>
+</li>
+<li>
+<p>To Close the code fold:<br>
+<code>$ zc (normal mode)</code></p>
+</li>
+<li>
+<p>vim have autocomplete like an IDE:<br>
+All you have to do is start typing and then press <code>Ctrl+n</code> in insert mode.
+<code>mac - control+n</code></p>
+</li>
+<li>
+<p>Basic Commands in normal mode of editor:<br>
+<code>yy</code> - Copies the current line.<br>
+<code>yw</code> - Copies the current word from the character the lowercase w cursor is on, until That_filename end of the word.<br>
+<code>p</code> - Pastes the copied text.<br>
+<code>u</code> - Undo the previously executed command.<br>
+<code>dd</code> - Deletes the current line of text.<br></p>
+<ul>
+<li>To rename the file:<br>
+<code>$ :f filename</code> - Helps you to rename the file.<br></li>
+</ul>
+</li>
+</ol>
+<h1>Note :<br></h1>
+<p>For window if we use vim fileName Command it will make a <code>.un~</code> file so
+to disable it Press Esc then <code>:set noundofile</code> after that <code>:wq</code></p>
